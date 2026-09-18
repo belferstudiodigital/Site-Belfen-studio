@@ -16,7 +16,7 @@ export function Contact() {
   const [phone, setPhone] = useState("");
   const [type, setType] = useState("");
 
-  const whatsappNumber = "5515999999999"; // TODO: substituir pelo número real da Belfen
+  const whatsappNumber = "5515997917950";
   const message = encodeURIComponent(
     `Olá! Meu nome é ${name || "___"}. Tenho interesse em um projeto do tipo "${
       type || "___"

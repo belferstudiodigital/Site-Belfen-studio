@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export function Footer() {
   const year = new Date().getFullYear();
 
@@ -5,9 +7,13 @@ export function Footer() {
     <footer className="border-t border-line py-12">
       <div className="mx-auto flex max-w-7xl flex-col gap-8 px-4 sm:px-6 lg:flex-row lg:items-end lg:justify-between lg:px-8">
         <div>
-          <span className="font-serif text-xl italic tracking-tight">
-            Belfen Studio
-          </span>
+          <Image
+            src="/brand/logo-mark.png"
+            alt="Belfen Studio"
+            width={481}
+            height={512}
+            className="h-10 w-auto"
+          />
           <p className="mt-3 max-w-xs text-sm leading-relaxed text-foreground-muted">
             Projeto é a base. O resto se constrói sobre ela.
           </p>
@@ -15,7 +21,7 @@ export function Footer() {
 
         <div className="flex flex-col gap-4 text-sm text-foreground-muted sm:flex-row sm:items-center sm:gap-8">
           <a
-            href="https://wa.me/5515999999999"
+            href="https://wa.me/5515997917950"
             target="_blank"
             rel="noreferrer"
             className="transition-colors hover:text-foreground"
@@ -23,7 +29,7 @@ export function Footer() {
             WhatsApp
           </a>
           <a
-            href="https://instagram.com/belfenstudio"
+            href="https://www.instagram.com/belfenstudio/"
             target="_blank"
             rel="noreferrer"
             className="transition-colors hover:text-foreground"

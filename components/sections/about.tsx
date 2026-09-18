@@ -50,7 +50,7 @@ export function About() {
         <div className="mt-16 grid grid-cols-2 gap-8 border-t border-line pt-10 sm:mt-20 sm:gap-16 sm:pt-12 lg:grid-cols-4">
           <Stat value="50+" label="projetos desde 2021" />
           <Stat value="18+" label="anos de experiência na construção civil" />
-          <Stat value="164+" label="registros de projetos no portfólio" />
+          <Stat value="500+" label="ambientes projetados" />
           <Stat value="5" label="frentes de atuação especializadas" />
         </div>
 

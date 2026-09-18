@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 
 const NAV = [
@@ -14,13 +15,15 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line/70 bg-background/85 backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="#top" className="flex items-center gap-2">
-          <span className="font-serif text-xl italic tracking-tight">
-            Belfen
-          </span>
-          <span className="text-[10px] font-medium uppercase tracking-[0.3em] text-foreground-muted">
-            Studio
-          </span>
+        <Link href="#top" className="flex items-center">
+          <Image
+            src="/brand/logo-full.png"
+            alt="Belfen Studio"
+            width={728}
+            height={236}
+            priority
+            className="h-8 w-auto sm:h-9"
+          />
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">

@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "motion/react";
 import { ParallaxScroll } from "@/components/ui/parallax-scroll";
+import { PortfolioMobileCarousel } from "@/components/ui/portfolio-mobile-carousel";
 import { getCategoriesWithImages } from "@/data/portfolio";
 
 export function Portfolio() {
@@ -70,7 +71,14 @@ export function Portfolio() {
               className="mt-10 overflow-hidden rounded-3xl border border-line bg-background-alt"
             >
               {active.images.length > 0 ? (
-                <ParallaxScroll images={active.images} />
+                <>
+                  <div className="hidden sm:block">
+                    <ParallaxScroll images={active.images} />
+                  </div>
+                  <div className="sm:hidden">
+                    <PortfolioMobileCarousel images={active.images} />
+                  </div>
+                </>
               ) : (
                 <div className="flex h-40 items-center justify-center px-6 text-center text-sm text-foreground-muted">
                   Nenhuma imagem em{" "}
